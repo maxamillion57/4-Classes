@@ -4,7 +4,7 @@ public class Soldier : Character
 {
     public string Rank { get; set; }
 
-    public Soldier(string name, int age, string rank) : base(name, age)
+    public Soldier(string name, int age, string rank, string orgName, string role) : base(name, age, orgName, role)
     {
         Rank = rank;
     }

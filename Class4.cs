@@ -16,3 +16,4 @@ public class Weapon
         Console.WriteLine($"Weapon: {Name}, Type: {Type}");
     }
 }
+

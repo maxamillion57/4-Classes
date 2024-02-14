@@ -1,11 +1,11 @@
-﻿using System;
+﻿]using System;
 
-public class Character
+public class Character : Organization
 {
     public string Name { get; set; }
     public int Age { get; set; }
 
-    public Character(string name, int age)
+    public Character(string name, int age, string orgName, string role) : base(orgName, role)
     {
         Name = name;
         Age = age;
@@ -14,5 +14,6 @@ public class Character
     public void Display()
     {
         Console.WriteLine($"Name: {Name}, Age: {Age}");
+        base.Display();
     }
 }
